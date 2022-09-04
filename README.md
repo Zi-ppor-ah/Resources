@@ -1,2 +1,2 @@
 # Resources
-Just statically hosted resources
+Just statically hosted stuff
