@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title id="title">ציפורה - Resources - Chords</title>
+    <meta name="viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../main.css" />
+</head>
+
+<body id="body">
+    <div id="header">
+        <span id="songName">songName</span>
+        <span id="back"><a href="../../../index.html">Back To Resources</a></span>
+        <span id="back"><a href="../main.html">Back To Chords | </a></span>
+        <div id="chordChart">
+            🎼
+            <div class="popup" onclick="openChordChart()">Chord Chart <i class="fa fa-external-link"></i>
+                <span class="chordtext" id="chordPopup">
+                    <i class="fa fa-window-close"></i>
+                    <img src="../common/ukulele-chord-chart.jpg">
+                </span>
+            </div>
+    
+            <script>
+                function openChordChart() {
+                    var popup = document.getElementById("chordPopup");
+                    popup.classList.toggle("show");
+                }
+                function closeChordChartIfOpen() {
+                    var popup = document.getElementById("chordPopup");
+                    if (popup.classList.contains('show')) {
+                        popup.classList.toggle("show");
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <span id="key">Key: C</span>
+    <pre style="font-size: 1.4vw;">
+        <div style="font-style: italic;">Verse 1</div>
+        C            G                 Am
+        You are my strength when I am weak
+                    C               F
+        You are the treasure that I seek
+                   C   G  C   G
+        You are my all in all
+        C           G             Am
+        Seeking You as a precious jewel
+                     C            F
+        Lord to give up, I'd be a fool
+                   C   G  C  
+        You are my all in all
+        <div style="font-style: italic;">Chorus</div>
+        C  G    Am      C    F     C   G   C  G
+        Jesus, Lamb of God, worthy is Your name
+        C  G    Am      C    F     C   G   C
+        Jesus, Lamb of God, worthy is Your name
+    </pre>
+
+
+
+</body>
+<script type="text/javascript">
+    var url = window.location.pathname;
+    url = decodeURI(url);
+    document.getElementById("title").innerHTML = 'ציפורה - Chords - ' + url.substring(url.lastIndexOf('/') + 1).replace('.html', '');
+    document.getElementById("songName").innerHTML = url.substring(url.lastIndexOf('/') + 1).replace('.html', '').toUpperCase();
+</script>
+
+</html>

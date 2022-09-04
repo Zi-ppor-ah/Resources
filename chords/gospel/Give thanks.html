@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title id="title">ציפורה - Resources - Chords</title>
+    <meta name="viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../main.css" />
+</head>
+
+<body id="body">
+    <div id="header">
+        <span id="songName">songName</span>
+        <span id="back"><a href="../../../index.html">Back To Resources</a></span>
+        <span id="back"><a href="../main.html">Back To Chords | </a></span>
+        <div id="chordChart">
+            🎼
+            <div class="popup" onclick="openChordChart()">Chord Chart <i class="fa fa-external-link"></i>
+                <span class="chordtext" id="chordPopup">
+                    <i class="fa fa-window-close"></i>
+                    <img src="../common/ukulele-chord-chart.jpg">
+                </span>
+            </div>
+    
+            <script>
+                function openChordChart() {
+                    var popup = document.getElementById("chordPopup");
+                    popup.classList.toggle("show");
+                }
+                function closeChordChartIfOpen() {
+                    var popup = document.getElementById("chordPopup");
+                    if (popup.classList.contains('show')) {
+                        popup.classList.toggle("show");
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <span id="key">Key: C</span>
+    <pre style="font-size: 1.4vw;">
+        <div style="font-style: italic;">Chorus</div>
+              C              G 
+        Give thanks with a grateful heart   
+              Am           Em   
+        Give thanks to the Holy One   
+              F                    C     Am     A#      Gsus    G   
+        Give thanks because He's given Jesus Christ, His Son
+        <div style="font-style: italic;">Verse</div>
+            Em          Am               Dm 
+        And now let the weak say, "I am strong"   
+                 G               C
+        Let the poor say, "I am rich   
+                   Am                A#       G
+        Because of what the Lord has done for us"    
+             Em          Am              Dm
+        And now let the weak say, "I am b"   
+                 G               C     
+        Let the poor say, "I am rich   
+                    Am                 A#     G
+        Because of what the Lord has done for us"  
+         C       C   
+        Give thanks
+    </pre>
+
+
+
+</body>
+<script type="text/javascript">
+    var url = window.location.pathname;
+    url = decodeURI(url);
+    document.getElementById("title").innerHTML = 'ציפורה - Chords - ' + url.substring(url.lastIndexOf('/') + 1).replace('.html', '');
+    document.getElementById("songName").innerHTML = url.substring(url.lastIndexOf('/') + 1).replace('.html', '').toUpperCase();
+</script>
+
+</html>

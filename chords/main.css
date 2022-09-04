@@ -1,0 +1,103 @@
+#body {
+    background-color: black;
+    font-family: 'Alef', sans-serif;
+    color: white;
+}
+
+#header {
+    background-color: darkslategray;
+    color: white;
+    padding: 10px;
+}
+
+#chords {
+    font-size: 4vw;
+}
+
+#chordChart{
+    margin-top: 10px;
+}
+
+#back>a {
+    float: right;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+#chords_grid {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+#chords_grid>div {
+    background-color: peru;
+    color: white;
+    font-size: 4vw;
+    padding: 10px;
+}
+
+#songs {
+    text-decoration: none;
+    color: white;
+  }
+
+#key {
+    float: right;
+    margin-right: 21px;
+    margin-top: 14px;
+}
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup .chordtext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#songName {
+    font-size: 4vw;
+}

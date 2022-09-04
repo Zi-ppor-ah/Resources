@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ציפורה - Resources - Chords</title>
+    <meta name="viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alef&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css" />
+</head>
+
+<body id="body">
+    <div id="header">
+
+        <span id="chords">Chords</span>
+        <span id="back"><a href="../index.html">Back To Resources</a></span>
+    </div>
+    <div id="chordChart">
+        <img src="common/chord.jpg" style="height: 49px;">
+        <div class="popup" onclick="openChordChart()">Chord Chart <i class="fa fa-external-link"></i>
+            <span class="chordtext" id="chordPopup">
+                <i class="fa fa-window-close"></i>
+                <img src="common/ukulele-chord-chart.jpg">
+            </span>
+        </div>
+
+        <script>
+            function openChordChart() {
+                var popup = document.getElementById("chordPopup");
+                popup.classList.toggle("show");
+            }
+            function closeChordChartIfOpen() {
+                var popup = document.getElementById("chordPopup");
+                if (popup.classList.contains('show')) {
+                    popup.classList.toggle("show");
+                }
+            }
+        </script>
+    </div>
+    <div id="chords_grid">
+        <div>
+            <a id="songs" href="gospel/still.html">Still</a>
+        </div>
+        <div>
+            <a id="songs" href="gospel/Amazing grace - My chains are gone.html">Amazing Grace - My chains are gone</a>
+        </div>
+        <div>
+            <a id="songs" href="gospel/Bless the Lord 10000 Reasons.html">Bless the Lord (10,000 Reasons)</a>
+        </div>
+        <div>
+            <a id="songs" href="gospel/All in all.html">All in all</a>
+        </div>
+        <div>
+            <a id="songs" href="gospel/How great Thou art.html">How great Thou art</a>
+        </div>
+        <div>
+            <a id="songs" href="gospel/Give thanks.html">Give thanks</a>
+        </div>
+        <div>
+            <a id="songs" href="gospel/Here I am to worship.html">Here I am to worship</a>
+        </div>
+        <div>
+            <a id="songs" href="gospel/Way maker.html">Way maker</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
